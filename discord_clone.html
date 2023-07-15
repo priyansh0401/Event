@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discord Clone</title>
+  <link rel="stylesheet" type="text/css" href="styles_discord.css">
+  <link rel="stylesheet" type="text/css" href="styles_channels.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <div class="sidebar">
+      <div class="user-profile">
+        <img src="avatar.jpeg" alt="User Avatar" class="avatar">
+        <div class="user-details">
+          <h3 class="username">Jatin</h3>
+          <span class="user-status">Online</span>
+          <button class="profile-button" id="profileButton">
+            <i class="fas fa-user"></i>
+          </button>
+        </div>
+        <button class="logout-button" id="logoutButton">
+          <span>Logout</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <h2>Channels</h2>
+      <ul class="channel-list">
+        <li class="channel active"><a href="discord_clone.html">General</a></li>
+        <li class="channel"><a href="random.html">Random</a></li>
+        <li class="channel "><a href="announcements.html">Announcements</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="chat-header">
+        <h1># General</h1>
+        <button id="createChannelButton">Create Channel</button>
+      </div>
+      <div class="chat" id="chatContainer"></div>
+      <div class="input-container">
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+    <div class="user-profile-section" id="userProfileSection">
+      <button class="close-button" id="closeButton">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2>User Profile</h2>
+      
+      <p>Name: Jatin</p>
+      <p>Email: jatin@example.com</p>
+      <p>Location: Earth</p>
+      <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <script src="script_discord.js"></script>
+</body>
+</html>
