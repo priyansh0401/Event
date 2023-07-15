@@ -191,6 +191,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(#2196f3, #e91e63);
     overflow: hidden;
+    cursor: url('./a.png'), auto;
 }
 
 .wrapper {
