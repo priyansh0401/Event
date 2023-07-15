@@ -70,7 +70,11 @@ signInLink.addEventListener('click', () => {
     wrapper.classList.add('animate-signUp');
     wrapper.classList.remove('animate-signIn');
 }
-                           
+
+
+var loginForm = document.getElementById('loginForm');
+var loginEmailInput = document.getElementById('loginEmailInput');
+var loginPasswordInput = document.getElementById('loginPasswordInput');
  loginForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
