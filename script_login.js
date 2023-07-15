@@ -1,6 +1,5 @@
 var loginForm = document.querySelector('.form-wrapper.sign-in form');
 var signupForm = document.querySelector('.form-wrapper.sign-up form');
-var loadingOverlay = document.getElementById('loadingOverlay');
 var wrapper = document.querySelector('.wrapper');
 var signUpLink = document.querySelector('.signUp-link');
 var signInLink = document.querySelector('.signIn-link');
@@ -51,27 +50,17 @@ signupForm.addEventListener('submit', function(event) {
   var signupEmail = signupEmailInput.value;
   var signupPassword = signupPasswordInput.value;
 
-  // Check if user already exists in the users object
+ 
   if (users.hasOwnProperty(signupEmail)) {
     alert('User already exists. Please login instead.');
     signupForm.reset();
   } else {
-    // Add the new user to the users object
+
     users[signupEmail] = {
       password: signupPassword
     };
 
     alert('Sign up successful! Please login.');
     signupForm.reset();
-    
   }
 });
-
-
-
-
-
-
-
-
-
