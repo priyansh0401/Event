@@ -69,7 +69,26 @@ signUpLink.addEventListener('click', () => {
 signInLink.addEventListener('click', () => {
     wrapper.classList.add('animate-signUp');
     wrapper.classList.remove('animate-signIn');
-});
+}
+                           
+ loginForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var loginEmail = loginEmailInput.value;
+  var loginPassword = loginPasswordInput.value;
+
+ 
+  alert('Login Successful!');
+  loginForm.reset();
+
+  
+  window.location.href = 'discord_clone.html';
+}                          
+                           
+                           
+                           
+                           
+);
 
 
 
