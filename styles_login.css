@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(black, white);
+  background: linear-gradient(#000000, #150050);
   overflow: hidden;
 }
 
