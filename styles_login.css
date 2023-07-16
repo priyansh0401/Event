@@ -5,14 +5,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(#000000, #0F044C);
-  overflow: hidden;
-}
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("login_page.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
 
 .wrapper {
   position: relative;
@@ -30,7 +34,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: radial-gradient(rgba(11,35,43,255),black);
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
@@ -115,7 +119,7 @@ h2 {
   left: 5px;
   transform: translateY(-50%);
   font-size: 16px;
-  color: #333;
+  color: rgba(255, 255, 255, 0.384);
   padding: 0 5px;
   pointer-events: none;
   transition: .5s;
@@ -127,7 +131,7 @@ h2 {
   font-size: 16px;
   color: #333;
   padding: 0 10px;
-  background: transparent;
+  background: black;
   border: 1px solid #333;
   outline: none;
   border-radius: 5px;
@@ -160,7 +164,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 40px;
-  background: linear-gradient(to right, black, white);
+  background: linear-gradient(#52057B,#52057B);
   box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
   font-size: 16px;
   color: #fff;
