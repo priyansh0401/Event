@@ -200,6 +200,7 @@ h2 {
 } 
 @media only screen and (max-width: 600px) {
     body {
+      background: url("1111.jpeg");
       background-size: contain;
       overflow: visible;
     }
