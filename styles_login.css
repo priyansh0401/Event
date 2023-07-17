@@ -197,29 +197,6 @@ h2 {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    align-items: flex-start;
-    overflow: visible;
-  }
-
-  .wrapper {
-    max-width: 90%;
-    height: auto;
-    align-self: flex-start;
-    margin-top: 20px;
-  }
-
-  .form-wrapper {
-    backdrop-filter: none;
-    -moz-backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    box-shadow: none;
-  }
-
-  .input-group {
-    margin: 20px 0;
-  }
 } 
 @media only screen and (max-width: 600px) {
     body {
