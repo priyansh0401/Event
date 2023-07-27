@@ -32,7 +32,7 @@ loginForm.addEventListener('submit', function(event) {
     if (user.password === loginPassword) {
       alert('Login Successful!');
       loginForm.reset();
-      window.location.href = 'discord_clone.html';
+      window.location.href = 'discord_clone2.html';
       return; // Exit the function after successful login
     } else {
       alert('Invalid username or password');
