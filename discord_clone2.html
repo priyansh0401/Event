@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="servers-section">
+      <div class="user-profile">
+        <!-- User profile details -->
+        <img src="avatar.jpeg" alt="User Avatar" class="avatar">
+        <div class="user-details">
+          <h3 class="username">John Doe</h3>
+          <span class="user-status">Online</span>
+        </div>
+        <button class="profile-button" id="profileButton">
+          <i class="fas fa-user"></i>
+        </button>
+        <button class="settings-button" id="settingsButton">
+          <i class="fas fa-cog"></i>
+        </button>
+      </div>
+      <ul class="server-list">
+        <!-- Server icons will be added dynamically through JavaScript -->
+      </ul>
+    </div>
+    <div class="channels-section">
+      <h2>Channels</h2>
+      <button id="createChannelButton">Create Channel</button>
+      <ul class="channel-list">
+        <!-- Channel items will be added dynamically through JavaScript -->
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="chat-header">
+        <h1 id="currentChannel"># General</h1>
+      </div>
+      <div class="chat" id="chatContainer">
+        <!-- Chat messages will be displayed here -->
+      </div>
+      <div class="input-container">
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+    <div class="user-profile-section" id="userProfileSection">
+      <button class="close-button" id="closeButton">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2>User Profile</h2>
+      <p>Name: John Doe</p>
+      <p>Email: johndoe@example.com</p>
+      <p>Location: Earth</p>
+      <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="settings-section" id="settingsSection">
+      <button class="close-button" id="closeSettingsButton">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2>Settings</h2>
+      <p>Language: English</p>
+      <p>Theme: Dark</p>
+      <!-- Additional settings can be added here -->
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

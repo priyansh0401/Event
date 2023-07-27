@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #202225;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.servers-section {
+  width: 40px;
+  background-color: #36393f;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.server-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px; /* Add some margin below the servers section */
+}
+
+.server {
+  cursor: pointer;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.servers-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.channels-section {
+  width: 14%;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.channels-section h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.channel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.channel i {
+  margin-right: 10px;
+}
+
+.channel-name {
+  font-size: 16px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  font-size: 18px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#currentChannel {
+  margin-left: 5px;
+}
+
+#createChannelButton {
+  width: 100px;
+}
+
+.chat {
+  flex: 1;
+  background-color: #2f3136;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chat .message {
+  margin-bottom: 10px;
+}
+
+.chat .message .sender {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex: 1; /* Adjusted to make the chatbox shorter from the right */
+  padding: 10px;
+  border: none;
+  background-color: #424549;
+  color: #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  background-color: #43b581;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.settings-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #1a1c20;
+  padding: 20px;
+  color: #fff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.settings-section.active {
+  transform: translateX(0);
+}
+
+.settings-section h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.settings-section p {
+  margin-bottom: 5px;
+}
+
+.settings-section .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.user-profile-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  background-color: #1a1c20;
+  padding: 20px;
+  color: #fff;
+  z-index: 999;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.user-profile-section.active {
+  transform: translateY(0);
+}
+
+.user-profile-section h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-profile-section p {
+  margin-bottom: 5px;
+}
+
+.user-profile-section .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* General Channel */
+.channel.general {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.channel.general h2 {
+  color: #fff;
+}
+
+.channel.general .message .sender {
+  color: var(--primary-color);
+}
+
+/* Adjust the user profile and settings sections for laptop screens */
+@media (min-width: 768px) {
+  .user-profile-section,
+  .settings-section {
+    width: 300px;
+  }
+}
